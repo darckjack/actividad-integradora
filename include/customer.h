@@ -25,6 +25,7 @@ private:
     std::string m_email;
     std::string m_address;
     std::string m_phone;
+    
 };
 
 #endif // CUSTOMER_H
