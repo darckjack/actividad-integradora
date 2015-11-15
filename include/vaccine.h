@@ -5,6 +5,9 @@
 
 class Vaccine {
 public:
+    Vaccine();
+    ~Vaccine();
+    
     int getYear();
     int getMonth();
     int getDay();
