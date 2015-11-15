@@ -6,7 +6,7 @@ endif
 
 CC=g++
 CFLAGS=-c -Wall -std=c++11
-SOURCES=main.cpp
+SOURCES=main.cpp src/customer.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 
 
