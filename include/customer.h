@@ -12,6 +12,7 @@ public:
     std::string getEmail();
     std::string getAddress();
     std::string getPhone();
+    
     void setId(int);
     void setName(std::string);
     void setEmail(std::string);
