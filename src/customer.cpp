@@ -1,5 +1,7 @@
 #include "../include/customer.h"
 
+using namespace std;
+
 Customer::Customer() {
     //ctor
 }
@@ -8,42 +10,42 @@ Customer::~Customer() {
     //dtor
 }
 
-int getId() {
+int Customer::getId() {
     return m_id;
 }
 
-string getName() {
+string Customer::getName() {
     return m_name;
 }
 
-string getEmail() {
+string Customer::getEmail() {
     return m_email;
 }
 
-string getAddress() {
+string Customer::getAddress() {
     return m_address;
 }
 
-string getPhone() {
+string Customer::getPhone() {
     return m_phone;
 }
 
-void setId(int id) {
+void Customer::setId(int id) {
     m_id = id;
 }
 
-void setName(string name) {
+void Customer::setName(string name) {
     m_name = name;
 }
 
-void setEmail(string email) {
+void Customer::setEmail(string email) {
     m_email = email;
 }
 
-void setAddress(string address) {
+void Customer::setAddress(string address) {
     m_address = address;
 }
 
-void setPhone(string phone) {
+void Customer::setPhone(string phone) {
     m_phone = phone;
 }
