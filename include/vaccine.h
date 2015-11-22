@@ -8,6 +8,7 @@ public:
     Vaccine();
     ~Vaccine();
     
+    int getId();
     int getYear();
     int getMonth();
     int getDay();
@@ -19,6 +20,7 @@ public:
     std::string getExpireDate();
     std::string getName();
     
+    void setId(int);
     void setYear(int);
     void setMonth(int);
     void setDay(int);
@@ -29,6 +31,7 @@ public:
     void setName(std::string);
     
 private:
+    int m_id;
     int m_year;
     int m_month;
     int m_day;

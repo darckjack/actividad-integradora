@@ -10,6 +10,10 @@ Treatment::~Treatment() {
 
 }
 
+int Treatment::getId() {
+    return m_id;
+}
+
 int Treatment::getYear() {
     return m_year;
 }
@@ -40,6 +44,10 @@ string Treatment::getMedicine() {
 
 string Treatment::getVet() {
     return m_vet;
+}
+
+void Treatment::setId(int id) {
+    m_id = id;
 }
 
 void Treatment::setYear(int year) {

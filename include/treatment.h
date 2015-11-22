@@ -8,6 +8,7 @@ public:
     Treatment();
     ~Treatment();
     
+    int getId();
     int getYear();
     int getMonth();
     int getDay();
@@ -17,6 +18,7 @@ public:
     std::string getMedicine();
     std::string getVet();
     
+    void setId(int);
     void setYear(int);
     void setMonth(int);
     void setDay(int);
@@ -26,6 +28,7 @@ public:
     void setVet(std::string);
 
 private:
+    int m_id;
     int m_year;
     int m_month;
     int m_day;

@@ -10,6 +10,10 @@ Vaccine::~Vaccine() {
 
 }
 
+int Vaccine::getId() {
+    return m_id;
+}
+
 int Vaccine::getYear() {
     return m_year;
 }
@@ -49,6 +53,10 @@ string Vaccine::getExpireDate() {
 
 string Vaccine::getName() {
     return m_name;
+}
+
+void Vaccine::setId(int id) {
+    m_id = id
 }
 
 void Vaccine::setYear(int year) {
