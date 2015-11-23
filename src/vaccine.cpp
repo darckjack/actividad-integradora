@@ -56,7 +56,7 @@ string Vaccine::getName() {
 }
 
 void Vaccine::setId(int id) {
-    m_id = id
+    m_id = id;
 }
 
 void Vaccine::setYear(int year) {

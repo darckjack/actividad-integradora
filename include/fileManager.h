@@ -8,6 +8,8 @@
 #include "vaccine.h"
 #include "pet.h"
 #include "customer.h"
+#include "Arbolista.h"
+#include "listDesencripta.h"
 
 #define BEGIN_PET "<Pet>"
 #define END_PET "</Pet>"
@@ -24,17 +26,24 @@ public:
     void addCustomer(Customer);
     void addTreatment(Treatment, Pet);
     void addVaccine(Vaccine, Pet);
-    
-    void readCustomer(Customer);
-    void readPet(Pet);
-    
+
+    Pet readPet(std::string);
+    Customer readCustomer(std::string);
+    Treatment readTreatment(std::string, int);
+    Vaccine readVaccine(std::string, int);
+
     void deletePet(Pet);
     void deleteCustomer(Customer);
     void deleteTreatment(Pet, Treatment);
     void deleteVaccine(Pet, Vaccine);
+
+    void updatePet(Pet, Pet);
+    void updateCustomer(Customer, Customer);
+    void updateTreatment(Pet, Treatment, Treatment);
+    void updateVaccine(Pet, Vaccine, Vaccine);
     
-    void updatePet(Pet);
-    void updateCustomer(Customer);
-    void updateTreatment(Pet, Treatment);
-    void updateVaccine(Pet, Vaccine);
+    void encryptFile(std::string);
+    void decryptFile(std::string);
 };
+
+#endif
